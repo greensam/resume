@@ -1,0 +1,197 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{amsart}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{realboxes}
+\usepackage{titlesec}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Samuel L. Green}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+%\def\footerlink{http://sa.muel.green}
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=0.75in,
+  bottom=0.4in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+%\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+% Reduce space before sections and subsections
+\titlespacing*{\section}{0pt}{0.7\baselineskip}{0.5\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0\baselineskip}
+
+\begin{document}
+
+% Place name at left
+%{\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\huge \bf \name}
+
+\vspace{0.1in}
+
+\Centerline{
+\begin{minipage}{0.45\linewidth}
+\begin{flushright}
+  1192 Park Avenue, Apt. 11B \\
+  New York, NY \\
+  10128 \\
+\end{flushright}
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (646) 457-2340 \\
+    Email: & \href{mailto:s@muel.green}{\tt s@muel.green} \\
+    Homepage: & \href{http:/sa.muel.green/}{\tt http://sa.muel.green/} \\
+  \end{tabular}
+\end{minipage}}
+
+% % 
+% % Education
+% %
+\section*{Education}
+
+\subsection*{Harvard University} 
+\begin{itemize}
+\item Class of 2017. A.B. \textit{summa cum laude} in Computer Science, minor in Government.
+\item Phi Beta Kappa. John Harvard Scholar (2014, 2016), Detur Book Prize (2014).  GPA 3.946. 
+\end{itemize}
+
+\subsection*{HBX, Harvard Business School}
+\begin{itemize}
+\item{Summer 2015. Credential of Readiness (CORe): coursework in accounting, business economics, and statistics. High honors.}
+\end{itemize}
+
+\subsection*{Phillips Academy, Andover}
+\begin{itemize}
+  \item Class of 2013. Cum Laude Society. Van Duzer prize for high scholarship. Prizes in physics, history, Latin, biology, and math.  
+\end{itemize}
+
+\section*{Work Experience}
+
+\subsection*{Bridgewater Associates, L.P. Investment Associate. (September 2017 -) }
+\begin{itemize}
+\item Beginning September 2017.
+\end{itemize}
+
+\subsection*{Harvard University. Head Teaching Fellow, Computer Science 51. (Fall 2015 - Spring 2017)}
+\begin{itemize}
+\item
+Selected and led the 28-member teaching staff for the second introductory CS course, serving 400 students. Oversaw
+development of problem sets, policies, and course infrastructure, including design and build of a software
+system for on-campus attendance collection. Executed in Fall 2015 a re-design of the course,
+including hiring, training, and managing staff to meet demands of a ''flipped classroom.''
+\end{itemize}
+
+\subsection*{BlackRock, Inc. Intern, Fixed Income Quantitative Portfolio Strategies. (Summer 2016)} 
+\begin{itemize}
+\item Summer 2016. Conducted foreign exchange statistical arbitrage investment research in Julia using new quantitative investment research platform. Developed software for the platform as needed. 
+\end{itemize}
+
+\subsection*{BlackRock, Inc. Intern, Financial Modeling Group. (Summer 2017)}
+\begin{itemize}
+\item Summer 2015. Designed and implemented a high-throughput server with multi-level caching architecture for security-level
+and factor-level cumulative performance and attribution data. Placed second in intern class hack-a-thon,
+building a UI tracking tool with one-line html integration with BlackRock web applications
+\end{itemize}
+
+\subsection*{The Phillipian (Andover). Editor in Chief.}
+\begin{itemize}
+\item Oversaw editorial processes and content creation, including staff editorials, for weekly student newspaper. Managed business,
+logistical, and technology operations, including a staff of more than 60 students. Turned operating loss
+of \$6,000 into \$5,000+ profit on \$30,000+ annual revenue.
+\end{itemize}
+
+
+\section*{Technical Experience}
+\subsection*{Coursework}
+\begin{itemize}
+\item \textbf{Computer Science:} Abstraction and Design in Computation, Theory of Computation, Data Structures and Algorithms, Data Visualization, Network Analysis, Computation and Economics.
+\item  \textbf{Statistics / Applied Math:} Advanced Optimization, Data Science, Probability Theory, Inference, Time Series Analysis, Linear Modeling, Financial Statistics.  
+\end{itemize}
+
+\subsection*{Programming}
+\begin{itemize} 
+\item Data science and web development in Python, and experience in Julia, OCaml, Java, and C.
+\end{itemize}
+
+\section*{Athletics \& Other}
+\begin{itemize}
+\item \textbf{The Oak Club}. President (2016), Treasurer (2015) of 65-student campus club.
+\item \textbf{Harvard Varsity Crew} (Fall 2013 - Spring 2015). Varsity Four EARC Champion, Spring 2014.
+\item \textbf{Spokes America} (Summer 2014). San Francisco to Washington DC cycling trip, teaching STEM.
+\item \textbf{Shinnecock Hills Golf Club} (Summers 2009-2012). Caddie. 
+\end{itemize}
+
+\bigskip
+
+% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Last updated: \today \\
+%    \href{\footerlink}{\texttt{\footerlink}}
+%  \end{footnotesize}
+%\end{center}
+
+\end{document}
